@@ -11,7 +11,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\src\application.cpp" />
+    <ClCompile Include="..\src\cmdargparser.cpp" />
     <ClCompile Include="..\src\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\application.hpp" />
+    <ClInclude Include="..\include\cmdargparser.hpp" />
+    <ClInclude Include="..\include\worldgen.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{93227A1A-B506-4E28-9253-EF1C5835D5A7}</ProjectGuid>
@@ -45,7 +52,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>$(SolutionDir)bin\</OutDir>
     <TargetName>worldgen</TargetName>
-    <IncludePath>D:\Programming\Projekty\World Engine\include;$(IncludePath)</IncludePath>
+    <IncludePath>D:\Programming\Liby\boost_1_55_0;D:\Programming\Projekty\World Engine\include;$(IncludePath)</IncludePath>
     <LibraryPath>D:\Programming\Projekty\World Engine\lib;$(LibraryPath)</LibraryPath>
     <SourcePath>D:\Programming\Projekty\World Engine\src;$(SourcePath)</SourcePath>
   </PropertyGroup>

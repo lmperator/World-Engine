@@ -5,35 +5,37 @@
 #include <iostream>
 #include <string>
 
+#include "../include/cmdargparser.hpp"
+
+using namespace std;
+
 
 int main( int argc, char* argv[] )
+try 
 {
-	const std::string kDefaultInputFileName = "spec.cfg";
-	const std::string kDefaultOutputFileName = "planet.pmd";
+    cout << "Hello in World Engine - Generator" << endl;
 
-	std::string inputFileName = kDefaultInputFileName;
-	std::string outputFileName = kDefaultOutputFileName;
-	switch (argc)
-	{
-	case 1:
-		std::cout << "Using default file names." << std::endl;
-		break;
-	case 2:
-		inputFileName = argv[1];
-		std::cout << "Using default output file name." << std::endl;
-		break;
-	case 3:
-		inputFileName = argv[1];
-		outputFileName = argv[2];
-		break;
-	default:
-		std::cout << "Usage: worldgen <<input>> <<output>>" << std::endl;
-		return -1;
-	}
+    CmdArgParser parser(argv[0]);
+    CmdArgumentDesc inputDesc, outputDesc;
 
-	std::cout << "Input file: " << inputFileName << std::endl;
-	std::cout << "Output file: " << outputFileName << std::endl;
+    inputDesc.mode = CmdArgumentMode::REQUIRED;
+    inputDesc.type = CmdArgumentType::STRING;
+    inputDesc.option = "-i";
+ 
+    outputDesc.mode = CmdArgumentMode::OPTIONAL;
+    outputDesc.type = CmdArgumentType::STRING;
+    outputDesc.option = "-o";
+    outputDesc.defaultVal = "planet.pmd";
 
-	std::cout << "Hello in World Engine - Generator" << std::endl;
-	return 0;
+    parser.register_argument( "input", inputDesc );
+    parser.register_argument( "output", outputDesc );
+    
+    parser.parse(argc, argv);
+    parser.print_args();
+
+    return 0;
 }
+catch (string msg)
+{
+    cout << "Exception occured: " << msg << endl;
+} 

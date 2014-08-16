@@ -15,5 +15,22 @@
     <ClCompile Include="..\src\main.cpp">
       <Filter>src\source</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\application.cpp">
+      <Filter>src\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cmdargparser.cpp">
+      <Filter>src\source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\worldgen.hpp">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\application.hpp">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\cmdargparser.hpp">
+      <Filter>src\include</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
