@@ -30,7 +30,10 @@ int main( int argc, char* argv[] )
 		std::cout << "Usage: worldgen <<input>> <<output>>" << std::endl;
 		return -1;
 	}
+
 	std::cout << "Input file: " << inputFileName << std::endl;
 	std::cout << "Output file: " << outputFileName << std::endl;
+
+	std::cout << "Hello in World Engine - Generator" << std::endl;
 	return 0;
 }
