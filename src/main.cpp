@@ -10,6 +10,7 @@
 using namespace std;
 
 
+
 int main( int argc, char* argv[] )
 try 
 {
@@ -31,7 +32,8 @@ try
     parser.register_argument( "output", outputDesc );
     
     parser.parse(argc, argv);
-    parser.print_args();
+    cout << "input: " << parser["input"].strv << endl;
+    cout << "output: " << parser["output"].strv << endl;
 
     return 0;
 }

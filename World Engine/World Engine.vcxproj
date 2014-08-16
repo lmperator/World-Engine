@@ -14,10 +14,16 @@
     <ClCompile Include="..\src\application.cpp" />
     <ClCompile Include="..\src\cmdargparser.cpp" />
     <ClCompile Include="..\src\main.cpp" />
+    <ClCompile Include="..\src\planet-sector.cpp" />
+    <ClCompile Include="..\src\planet.cpp" />
+    <ClCompile Include="..\src\pmd.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\include\application.hpp" />
     <ClInclude Include="..\include\cmdargparser.hpp" />
+    <ClInclude Include="..\include\planet-sector.hpp" />
+    <ClInclude Include="..\include\planet.hpp" />
+    <ClInclude Include="..\include\pmd.hpp" />
     <ClInclude Include="..\include\worldgen.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

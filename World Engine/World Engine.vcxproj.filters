@@ -21,6 +21,15 @@
     <ClCompile Include="..\src\cmdargparser.cpp">
       <Filter>src\source</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\pmd.cpp">
+      <Filter>src\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\planet-sector.cpp">
+      <Filter>src\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\planet.cpp">
+      <Filter>src\source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\include\worldgen.hpp">
@@ -30,6 +39,15 @@
       <Filter>src\include</Filter>
     </ClInclude>
     <ClInclude Include="..\include\cmdargparser.hpp">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\pmd.hpp">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\planet-sector.hpp">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\planet.hpp">
       <Filter>src\include</Filter>
     </ClInclude>
   </ItemGroup>

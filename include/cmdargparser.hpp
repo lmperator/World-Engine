@@ -8,12 +8,11 @@
 
 #include <cstdint>
 #include <string>
-#include <vector>
 #include <map>
 
 
 // debug mode on, comment next line to turn off.
-#define __WORLD_ENGINE_GENERATOR_DEBUG_MODE
+//#define __WORLD_ENGINE_GENERATOR_DEBUG_MODE
 
 
 
